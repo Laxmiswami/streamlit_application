@@ -1,0 +1,14 @@
+pipeline {
+     agent any
+
+     stages{
+        stage('compile SCM') {
+            steps {
+                git 'https://github.com/Laxmiswami/streamlit_application.git'
+                  }
+               }
+
+         }
+}
+
+
